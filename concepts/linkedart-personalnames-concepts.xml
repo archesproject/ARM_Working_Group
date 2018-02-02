@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+>
+  <skos:ConceptScheme rdf:about="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8">
+    <dcterms:title xml:lang="en-US">{"id": "9d14a0e4-7cf0-4230-a8de-a66be7c4e7e7", "value": "AAT Vocabulary"}</dcterms:title>
+    <skos:hasTopConcept>
+      <skos:Concept rdf:about="http://www.archesproject.org/4154916b-03a0-4849-a08f-46edbb2839d2">
+        <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+        <skos:prefLabel xml:lang="en-US">{"id": "97bec20e-9408-452e-94f2-658016663df7", "value": "Concept"}</skos:prefLabel>
+        <skos:narrower rdf:resource="http://www.archesproject.org/d7acbb64-99b8-470b-90bc-f160b195a3e0"/>
+      </skos:Concept>
+    </skos:hasTopConcept>
+  </skos:ConceptScheme>
+  <skos:Concept rdf:about="http://www.archesproject.org/974a0cc5-9b53-4ad4-a372-60371b11c1de">
+    <dcterms:identifier xml:lang="en-US">{"id": "34da0419-24f1-4491-92da-c828d62e1e92", "value": "http://vocab.getty.edu/aat/300404681"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en">{"id": "b1ed688e-d319-41fa-8a01-96ca1c7c79ef", "value": "Regarding personal names, names given to a person at birth or soon thereafter; used to distinguish the person's original name from later assumed names or name changes."}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">{"id": "27e3979a-c166-4540-a3d4-5a251889eaa3", "value": "birth names"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/a5988855-071a-4943-892a-e54959cdc2ec">
+    <dcterms:identifier xml:lang="en-US">{"id": "43532117-a591-48c2-be8b-f3f9015a70cb", "value": "http://vocab.getty.edu/aat/300404657"}</dcterms:identifier>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+    <skos:scopeNote xml:lang="en">{"id": "eda39413-1aa2-4bb6-9d8b-144f93d514f6", "value": "General term for false or ficticious names or appellations used instead of personal names, place names, and other names. When adopted for personal names, pseudonyms may be used to conceal the real identity of the person, for example, as used by authors and artists."}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">{"id": "4f377129-6b61-4601-b139-954c142ce09c", "value": "pseudonyms"}</skos:prefLabel>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/6be8bf91-1ba5-447d-9f2c-627f1dc6a506">
+    <skos:scopeNote xml:lang="en">{"id": "cc224adf-a6a9-450f-a14f-16aff28ef0ba", "value": "Names or appellations that are given to a person, animal, or place as a familiar or humorous replacement for, or addition to, the proper name."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+    <skos:prefLabel xml:lang="en">{"id": "65779335-374d-48ed-9c7e-deb34bd18d1c", "value": "nicknames"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-US">{"id": "fb46b9fd-249d-4333-858f-6d8c4065ada8", "value": "http://vocab.getty.edu/aat/300404656"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/0e76d87d-0197-4b9c-b3a4-293949fd34cd">
+    <dcterms:identifier xml:lang="en-US">{"id": "ad03ecba-29a8-4e4b-b1b6-bcffe7c055b7", "value": "http://vocab.getty.edu/aat/300404652"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "f94520bc-8cee-4f7d-bb1c-689bda667e25", "value": "last names"}</skos:prefLabel>
+    <skos:scopeNote xml:lang="en">{"id": "2d346b5b-ca2e-4ab3-8b28-0a5b7a384214", "value": "In the context of modern western personal names, the names that are hereditary and common to all members of a family; used with a first name to distinguish an individual from others with the same first name. In other cultural traditions, last names may not be hereditary family names or they may not be used at all. Before last names became common in western tradition, personal names were qualified with the addition of epithets, place names, ancestors' names, or terms for professions; these were added to a first name on an individual basis, not necesssarily hereditary for a family."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/77ff36b6-c1c4-46c2-93dc-0719a8042f84">
+    <skos:scopeNote xml:lang="en">{"id": "3789e137-0e46-4e95-81e2-62273e1b9674", "value": "Regarding personal names, last names acquired by a person, usually a woman, through marriage; distinguished from \"maiden names.\""}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+    <skos:prefLabel xml:lang="en">{"id": "ec044e55-7852-428c-8aa2-acfcee480fe2", "value": "married names"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-US">{"id": "e07d00d0-98d5-49e9-bc38-b1aeb7d7eef2", "value": "http://vocab.getty.edu/aat/300404683"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/465c081a-853f-4c57-82cc-7f01bb512849">
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+    <skos:prefLabel xml:lang="en">{"id": "edc8e58d-230d-4095-8b36-7d41d1c3912c", "value": "pen names"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-US">{"id": "afe01e99-e5a6-496a-8c2d-478167902666", "value": "http://vocab.getty.edu/aat/300404678"}</dcterms:identifier>
+    <skos:scopeNote xml:lang="en">{"id": "2f023b3d-e3b4-42b6-9d9a-d7be11f4a5c3", "value": "Regarding personal names, assumed names used by authors rather than their real names."}</skos:scopeNote>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/29526a49-e94a-4f09-8ce4-32cce63c2b73">
+    <skos:scopeNote xml:lang="en">{"id": "083a19f6-432b-4953-9fdb-e0447cb64cb8", "value": "Regarding personal names, assumed names used by actors and other performers rather than their real names."}</skos:scopeNote>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+    <skos:prefLabel xml:lang="en">{"id": "5c9372da-77f8-445d-a53b-0157b2625fd8", "value": "stage names"}</skos:prefLabel>
+    <dcterms:identifier xml:lang="en-US">{"id": "12840929-a638-44a8-9b79-f45505fb614b", "value": "http://vocab.getty.edu/aat/300404679"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/229a306b-5765-4241-bfe4-de702640517a">
+    <skos:scopeNote xml:lang="en">{"id": "2ae09753-4817-4e51-b921-9fc901029846", "value": "Titles of courtesy, professional titles, military rank, adjectives, or other words used before a personal name. Examples are words to indicate gender, marital status, social position, or included for another purpose, such as the following words and abbreviations: Mr., Mrs., Miss, Ms., Dr., Sir, and Rev."}</skos:scopeNote>
+    <skos:prefLabel xml:lang="en">{"id": "404e758d-d79e-4056-acaf-8abb915c3823", "value": "prefixes (name additions)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+    <dcterms:identifier xml:lang="en-US">{"id": "e0492e09-6b93-4fcb-9b18-02e16a826454", "value": "http://vocab.getty.edu/aat/300404845"}</dcterms:identifier>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/107aa288-98fd-4c09-8222-f0cd3a8aeaf3">
+    <skos:scopeNote xml:lang="en">{"id": "1f7f0efd-76d1-4e95-ad06-cb97afcdf0a6", "value": "Appellations, words, or phrases that follow a personal name. For example words or numerals denoting family relationships, usually between members having the same first name, such as the senior and junior of two indicated persons."}</skos:scopeNote>
+    <dcterms:identifier xml:lang="en-US">{"id": "f4b43957-0fbf-4878-80fc-655fede165c3", "value": "http://vocab.getty.edu/aat/300404662"}</dcterms:identifier>
+    <skos:prefLabel xml:lang="en">{"id": "0983a374-0e58-4d33-84bf-a6cfeb836862", "value": "suffixes (name additions)"}</skos:prefLabel>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="http://www.archesproject.org/d7acbb64-99b8-470b-90bc-f160b195a3e0">
+    <skos:narrower rdf:resource="http://www.archesproject.org/6be8bf91-1ba5-447d-9f2c-627f1dc6a506"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://www.archesproject.org/d6bc5174-dd1f-4c43-9fb6-0c767ae99839">
+        <dcterms:identifier xml:lang="en-US">{"id": "d983475e-d9d1-425e-9818-a694454fc21e", "value": "http://vocab.getty.edu/aat/300404651"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+        <skos:prefLabel xml:lang="en">{"id": "5670f6c7-8fd6-495e-8ae1-e4d8e59fe62a", "value": "first names"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "cec4b9f6-348c-43f9-bf58-9a9e0b974b81", "value": "In the context of personal names, particularly in western culture, a first name is the name given to a person at birth or an early period of life, historically at baptism and historically chosen to signify or honor a saint, an earlier family member, or a personal characteristic. In modern western usage, a first name is combined with a family name or other names to distinguish between multiple people having the same first name. In other traditions, such as Islamic tradition, the first name may be a religious name or another sort of name."}</skos:scopeNote>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="http://www.archesproject.org/77ff36b6-c1c4-46c2-93dc-0719a8042f84"/>
+    <skos:narrower rdf:resource="http://www.archesproject.org/0e76d87d-0197-4b9c-b3a4-293949fd34cd"/>
+    <skos:narrower rdf:resource="http://www.archesproject.org/974a0cc5-9b53-4ad4-a372-60371b11c1de"/>
+    <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+    <skos:narrower rdf:resource="http://www.archesproject.org/229a306b-5765-4241-bfe4-de702640517a"/>
+    <skos:prefLabel xml:lang="en-US">{"id": "d77414de-19f1-486a-9633-4b6a4bb1bb4c", "value": "Name Types"}</skos:prefLabel>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://www.archesproject.org/4642353f-afb0-4d4b-b530-d8146103641f">
+        <dcterms:identifier xml:lang="en-US">{"id": "a4bdd236-f2fb-479d-8714-daa7ba9139b0", "value": "http://vocab.getty.edu/aat/300404654"}</dcterms:identifier>
+        <skos:prefLabel xml:lang="en">{"id": "4ca3f476-8d88-4a05-9b4a-b044f7ead952", "value": "middle names"}</skos:prefLabel>
+        <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+        <skos:scopeNote xml:lang="en">{"id": "8d2843b0-f110-487e-a62f-58ef28f492d7", "value": "In the context of personal names, particularly in western culture, names that are positioned between a first name and a last name, possibly comprising an additional familiar name or a maternal family name. In other traditions, such as Islamic tradition, the middle name may be the primary personal name (analogous to the first name in western tradition) or another sort of name."}</skos:scopeNote>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="http://www.archesproject.org/29526a49-e94a-4f09-8ce4-32cce63c2b73"/>
+    <skos:narrower rdf:resource="http://www.archesproject.org/a5988855-071a-4943-892a-e54959cdc2ec"/>
+    <skos:narrower rdf:resource="http://www.archesproject.org/465c081a-853f-4c57-82cc-7f01bb512849"/>
+    <skos:narrower>
+      <skos:Concept rdf:about="http://www.archesproject.org/e45488f0-be4f-4087-a683-bec8caa21272">
+        <skos:prefLabel xml:lang="en">{"id": "0aa92dcb-c147-453f-b7ab-c0cb75278e77", "value": "maiden names"}</skos:prefLabel>
+        <skos:scopeNote xml:lang="en">{"id": "29ec9d58-a22a-4472-b2f9-4b9f900e83dd", "value": "Regarding personal names, last names held by a woman prior to marriage, at which time she may adopt her husband's last name."}</skos:scopeNote>
+        <dcterms:identifier xml:lang="en-US">{"id": "6433d026-03ea-40c1-9b73-927d94dcf3cf", "value": "http://vocab.getty.edu/aat/300404682"}</dcterms:identifier>
+        <skos:inScheme rdf:resource="http://www.archesproject.org/b374005f-0d24-496c-a696-af1b1f83aad8"/>
+      </skos:Concept>
+    </skos:narrower>
+    <skos:narrower rdf:resource="http://www.archesproject.org/107aa288-98fd-4c09-8222-f0cd3a8aeaf3"/>
+  </skos:Concept>
+</rdf:RDF>

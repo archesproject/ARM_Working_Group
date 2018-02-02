@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <skos:Collection rdf:about="http://www.archesproject.org/d95740f1-bf5f-4de2-a11d-62362ba854a6">
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/d6bc5174-dd1f-4c43-9fb6-0c767ae99839"/>
+    </skos:member>
+    <skos:prefLabel xml:lang="en-US">{"id": "151e834b-307f-4a1e-ad29-c49f875241c0", "value": "first name collection"}</skos:prefLabel>
+  </skos:Collection>
+  <skos:Collection rdf:about="http://www.archesproject.org/bed02fee-ef4f-4e51-bae1-61085b788e5f">
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/4642353f-afb0-4d4b-b530-d8146103641f"/>
+    </skos:member>
+    <skos:prefLabel xml:lang="en-US">{"id": "a02c48c5-ae8f-44a8-8062-115b3ca302d0", "value": "middle names collection"}</skos:prefLabel>
+  </skos:Collection>
+  <skos:Collection rdf:about="http://www.archesproject.org/b9b40843-817a-4e90-8bc5-0d655afa8184">
+    <skos:prefLabel xml:lang="en-US">{"id": "8af80340-078c-4ff5-9628-b969855b9c15", "value": "name suffix collection"}</skos:prefLabel>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/107aa288-98fd-4c09-8222-f0cd3a8aeaf3"/>
+    </skos:member>
+  </skos:Collection>
+  <skos:Collection rdf:about="http://www.archesproject.org/052375ed-7d62-4456-a3da-241019a9ee62">
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/229a306b-5765-4241-bfe4-de702640517a"/>
+    </skos:member>
+    <skos:prefLabel xml:lang="en-US">{"id": "a8bbd960-137c-41fa-b642-9aa8aeeca501", "value": "name prefix collection"}</skos:prefLabel>
+  </skos:Collection>
+  <skos:Collection rdf:about="http://www.archesproject.org/3633a249-64ba-4586-b7c8-a141d8ef30eb">
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/974a0cc5-9b53-4ad4-a372-60371b11c1de"/>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/6be8bf91-1ba5-447d-9f2c-627f1dc6a506"/>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/29526a49-e94a-4f09-8ce4-32cce63c2b73"/>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/465c081a-853f-4c57-82cc-7f01bb512849"/>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/a5988855-071a-4943-892a-e54959cdc2ec"/>
+    </skos:member>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/e45488f0-be4f-4087-a683-bec8caa21272"/>
+    </skos:member>
+    <skos:prefLabel xml:lang="en-US">{"id": "bf1a32e3-e63a-4e10-972b-72fb0051df35", "value": "personal name types collection"}</skos:prefLabel>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/77ff36b6-c1c4-46c2-93dc-0719a8042f84"/>
+    </skos:member>
+  </skos:Collection>
+  <skos:Collection rdf:about="http://www.archesproject.org/00000000-0000-0000-0000-000000000005">
+    <skos:prefLabel xml:lang="en-US">{"id": "d8c622f6-e786-11e6-905a-475a5eee86f5", "value": "Resource To Resource Relationship Types"}</skos:prefLabel>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/00000000-0000-0000-0000-000000000007"/>
+    </skos:member>
+  </skos:Collection>
+  <skos:Collection rdf:about="http://www.archesproject.org/ef12c479-bc82-428e-8fa6-769e31251da4">
+    <skos:prefLabel xml:lang="en-US">{"id": "b57ab662-f93a-4041-afd0-6fa9f130e5a0", "value": "last name collection"}</skos:prefLabel>
+    <skos:member>
+      <skos:Concept rdf:about="http://www.archesproject.org/0e76d87d-0197-4b9c-b3a4-293949fd34cd"/>
+    </skos:member>
+  </skos:Collection>
+</rdf:RDF>
