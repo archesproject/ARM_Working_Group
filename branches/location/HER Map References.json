@@ -1,0 +1,174 @@
+{
+    "graph": [
+        {
+            "author": " ", 
+            "cards": [
+                {
+                    "active": true, 
+                    "cardid": "e6738245-8875-11e7-9e33-dca90488358a", 
+                    "description": "", 
+                    "graph_id": "e6697e5e-8875-11e7-83f5-dca90488358a", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "HER Map References", 
+                    "nodegroup_id": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                    "sortorder": null, 
+                    "visible": true
+                }
+            ], 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "e6738245-8875-11e7-9e33-dca90488358a", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Map Reference Name", 
+                        "maxLength": null, 
+                        "placeholder": "e.g.: National Grid Reference or Map Name", 
+                        "width": "100%"
+                    }, 
+                    "id": "f5c9d407-10fa-11e8-a356-dca90488358a", 
+                    "label": "Map Reference Name", 
+                    "node_id": "fef73adc-8876-11e7-8733-dca90488358a", 
+                    "sortorder": 0, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "e6738245-8875-11e7-9e33-dca90488358a", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Map Reference Type", 
+                        "options": [], 
+                        "placeholder": "Select an option"
+                    }, 
+                    "id": "f5c929f3-10fa-11e8-aa48-dca90488358a", 
+                    "label": "Map Reference Type", 
+                    "node_id": "22a5ee2e-8877-11e7-9fb0-dca90488358a", 
+                    "sortorder": 1, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }
+            ], 
+            "deploymentdate": null, 
+            "deploymentfile": null, 
+            "description": "", 
+            "edges": [
+                {
+                    "description": null, 
+                    "domainnode_id": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                    "edgeid": "22a5f163-8877-11e7-8f92-dca90488358a", 
+                    "graph_id": "e6697e5e-8875-11e7-83f5-dca90488358a", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "rangenode_id": "22a5ee2e-8877-11e7-9fb0-dca90488358a"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                    "edgeid": "fef73db5-8876-11e7-bbe3-dca90488358a", 
+                    "graph_id": "e6697e5e-8875-11e7-83f5-dca90488358a", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by", 
+                    "rangenode_id": "fef73adc-8876-11e7-8733-dca90488358a"
+                }
+            ], 
+            "forms": [], 
+            "forms_x_cards": [], 
+            "functions_x_graphs": [], 
+            "graphid": "e6697e5e-8875-11e7-83f5-dca90488358a", 
+            "iconclass": "fa fa-map-marker", 
+            "is_editable": true, 
+            "isactive": true, 
+            "isresource": false, 
+            "name": "HER Map References", 
+            "nodegroups": [
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                    "parentnodegroup_id": null
+                }
+            ], 
+            "nodes": [
+                {
+                    "config": {
+                        "rdmCollection": null
+                    }, 
+                    "datatype": "concept", 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "e6697e5e-8875-11e7-83f5-dca90488358a", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Map Reference Type", 
+                    "nodegroup_id": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                    "nodeid": "22a5ee2e-8877-11e7-9fb0-dca90488358a", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                }, 
+                {
+                    "config": {
+                        "fillColor": "rgba(233,112,111,0.8)"
+                    }, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "e6697e5e-8875-11e7-83f5-dca90488358a", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": true, 
+                    "name": "Map References", 
+                    "nodegroup_id": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                    "nodeid": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier", 
+                    "parentproperty": ""
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "e6697e5e-8875-11e7-83f5-dca90488358a", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Map Reference Name", 
+                    "nodegroup_id": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                    "nodeid": "fef73adc-8876-11e7-8733-dca90488358a", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+                }
+            ], 
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
+            "relatable_resource_model_ids": [], 
+            "reports": [], 
+            "resource_2_resource_constraints": [], 
+            "root": {
+                "config": {
+                    "fillColor": "rgba(233,112,111,0.8)"
+                }, 
+                "datatype": "semantic", 
+                "description": "", 
+                "graph_id": "e6697e5e-8875-11e7-83f5-dca90488358a", 
+                "is_collector": true, 
+                "isrequired": false, 
+                "issearchable": true, 
+                "istopnode": true, 
+                "name": "Map References", 
+                "nodegroup_id": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                "nodeid": "e66979f5-8875-11e7-8bc6-dca90488358a", 
+                "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E42_Identifier"
+            }, 
+            "subtitle": "Mapsheet names, grid references to define resource location", 
+            "version": ""
+        }
+    ], 
+    "metadata": {
+        "db": "PostgreSQL 9.6.3 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
+        "git hash": "3137aeb7d 2018-02-09 19:18:50 -0800", 
+        "os": "Darwin", 
+        "os version": "17.3.0"
+    }
+}

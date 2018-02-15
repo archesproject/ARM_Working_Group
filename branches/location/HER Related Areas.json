@@ -1,0 +1,174 @@
+{
+    "graph": [
+        {
+            "author": "Phil Carlisle", 
+            "cards": [
+                {
+                    "active": true, 
+                    "cardid": "8a9ddb09-e3e2-11e7-84a5-021893e306d8", 
+                    "description": "", 
+                    "graph_id": "8a9ddb06-e3e2-11e7-84a5-021893e306d8", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "HER Related Areas", 
+                    "nodegroup_id": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                    "sortorder": null, 
+                    "visible": true
+                }
+            ], 
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "8a9ddb09-e3e2-11e7-84a5-021893e306d8", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Area Name", 
+                        "maxLength": null, 
+                        "placeholder": "e.g.: Lincolnshire, 100 yr Flood Zone", 
+                        "width": "100%"
+                    }, 
+                    "id": "f77ce612-10fc-11e8-84a5-021893e306d8", 
+                    "label": "Area Name", 
+                    "node_id": "8a9ddb0a-e3e2-11e7-84a5-021893e306d8", 
+                    "sortorder": 0, 
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }, 
+                {
+                    "card_id": "8a9ddb09-e3e2-11e7-84a5-021893e306d8", 
+                    "config": {
+                        "defaultValue": "", 
+                        "label": "Area Type", 
+                        "options": [], 
+                        "placeholder": "e.g.: Administrative area, Hazard Area"
+                    }, 
+                    "id": "f77ce613-10fc-11e8-84a5-021893e306d8", 
+                    "label": "Area Type", 
+                    "node_id": "8a9ddb0b-e3e2-11e7-84a5-021893e306d8", 
+                    "sortorder": 1, 
+                    "widget_id": "10000000-0000-0000-0000-000000000002"
+                }
+            ], 
+            "deploymentdate": null, 
+            "deploymentfile": null, 
+            "description": "", 
+            "edges": [
+                {
+                    "description": null, 
+                    "domainnode_id": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                    "edgeid": "8a9ddb0c-e3e2-11e7-84a5-021893e306d8", 
+                    "graph_id": "8a9ddb06-e3e2-11e7-84a5-021893e306d8", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "rangenode_id": "8a9ddb0b-e3e2-11e7-84a5-021893e306d8"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                    "edgeid": "8a9ddb0d-e3e2-11e7-84a5-021893e306d8", 
+                    "graph_id": "8a9ddb06-e3e2-11e7-84a5-021893e306d8", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by", 
+                    "rangenode_id": "8a9ddb0a-e3e2-11e7-84a5-021893e306d8"
+                }
+            ], 
+            "forms": [], 
+            "forms_x_cards": [], 
+            "functions_x_graphs": [], 
+            "graphid": "8a9ddb06-e3e2-11e7-84a5-021893e306d8", 
+            "iconclass": "fa fa-area-chart", 
+            "is_editable": true, 
+            "isactive": true, 
+            "isresource": false, 
+            "name": "HER Related Areas", 
+            "nodegroups": [
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                    "parentnodegroup_id": null
+                }
+            ], 
+            "nodes": [
+                {
+                    "config": {
+                        "fillColor": "rgba(233,112,111,0.8)"
+                    }, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "8a9ddb06-e3e2-11e7-84a5-021893e306d8", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": true, 
+                    "name": "Administrative Areas", 
+                    "nodegroup_id": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                    "nodeid": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place", 
+                    "parentproperty": ""
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "8a9ddb06-e3e2-11e7-84a5-021893e306d8", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Administrative Area Name", 
+                    "nodegroup_id": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                    "nodeid": "8a9ddb0a-e3e2-11e7-84a5-021893e306d8", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by"
+                }, 
+                {
+                    "config": {
+                        "rdmCollection": null
+                    }, 
+                    "datatype": "concept", 
+                    "description": "Represents a single node in a graph", 
+                    "graph_id": "8a9ddb06-e3e2-11e7-84a5-021893e306d8", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "Administrative Area Type", 
+                    "nodegroup_id": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                    "nodeid": "8a9ddb0b-e3e2-11e7-84a5-021893e306d8", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type"
+                }
+            ], 
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
+            "relatable_resource_model_ids": [], 
+            "reports": [], 
+            "resource_2_resource_constraints": [], 
+            "root": {
+                "config": {
+                    "fillColor": "rgba(233,112,111,0.8)"
+                }, 
+                "datatype": "semantic", 
+                "description": "", 
+                "graph_id": "8a9ddb06-e3e2-11e7-84a5-021893e306d8", 
+                "is_collector": true, 
+                "isrequired": false, 
+                "issearchable": true, 
+                "istopnode": true, 
+                "name": "Administrative Areas", 
+                "nodegroup_id": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                "nodeid": "8a9ddb07-e3e2-11e7-84a5-021893e306d8", 
+                "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E53_Place"
+            }, 
+            "subtitle": "Used to record the Administrative or other areas in which a heritage asset is located.", 
+            "version": ""
+        }
+    ], 
+    "metadata": {
+        "db": "PostgreSQL 9.6.3 on x86_64-apple-darwin14.5.0, compiled by Apple LLVM version 7.0.0 (clang-700.1.76), 64-bit", 
+        "git hash": "3137aeb7d 2018-02-09 19:18:50 -0800", 
+        "os": "Darwin", 
+        "os version": "17.3.0"
+    }
+}
