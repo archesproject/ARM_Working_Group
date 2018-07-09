@@ -61,21 +61,21 @@ Add additional common relationships
 <rdf:Property rdf:about="https://linked.art/ns/terms/paid_amount">
         <rdfs:label xml:lang="en">Paid Amount</rdfs:label>
         <rdfs:comment xml:lang="en">The amount paid.</rdfs:comment>
-        <rdfs:domain rdf:resource="https://linked.art/ns/Payment"/>
+        <rdfs:domain rdf:resource="https://linked.art/ns/terms/Payment"/>
         <rdfs:range rdf:resource="E97_Monetary_Amount"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="https://linked.art/ns/terms/paid_from">
         <rdfs:label xml:lang="en">Paid From</rdfs:label>
         <rdfs:comment xml:lang="en">Who the payment came from</rdfs:comment>
-        <rdfs:domain rdf:resource="https://linked.art/ns/Payment"/>
+        <rdfs:domain rdf:resource="https://linked.art/ns/terms/Payment"/>
         <rdfs:range rdf:resource="E39_Actor"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="https://linked.art/ns/terms/paid_to">
         <rdfs:label xml:lang="en">Paid To</rdfs:label>
         <rdfs:comment xml:lang="en">Who the payment went to</rdfs:comment>
-        <rdfs:domain rdf:resource="https://linked.art/ns/Payment"/>
+        <rdfs:domain rdf:resource="https://linked.art/ns/terms/Payment"/>
         <rdfs:range rdf:resource="E39_Actor"/>
 </rdf:Property>
 
@@ -90,36 +90,36 @@ Add additional common relationships
 <rdf:Property rdf:about="https://linked.art/ns/terms/claimed_by">
         <rdfs:label xml:lang="en">Claimed By</rdfs:label>
         <rdfs:comment xml:lang="en">The actor making the legal claim</rdfs:comment>
-        <rdfs:domain rdf:resource="https://linked.art/ns/LegalClaim"/>
+        <rdfs:domain rdf:resource="https://linked.art/ns/terms/LegalClaim"/>
         <rdfs:range rdf:resource="E39_Actor"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="https://linked.art/ns/terms/jurisdiction">
         <rdfs:label xml:lang="en">Jurisdiction</rdfs:label>
         <rdfs:comment xml:lang="en">The jurisdiction under which the legal claim is potentially enforceable</rdfs:comment>
-        <rdfs:domain rdf:resource="https://linked.art/ns/LegalClaim"/>
+        <rdfs:domain rdf:resource="https://linked.art/ns/terms/LegalClaim"/>
         <rdfs:range rdf:resource="E53_Place"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="https://linked.art/ns/terms/instantiates">
         <rdfs:label xml:lang="en">Instantiates</rdfs:label>
         <rdfs:comment xml:lang="en">The right that the legal claim is instantiating</rdfs:comment>
-        <rdfs:domain rdf:resource="https://linked.art/ns/LegalClaim"/>
+        <rdfs:domain rdf:resource="https://linked.art/ns/terms/LegalClaim"/>
         <rdfs:range rdf:resource="E30_Right"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="https://linked.art/ns/terms/claimed_part">
         <rdfs:label xml:lang="en">Claimed Part</rdfs:label>
         <rdfs:comment xml:lang="en">The object legal claim is part of the subject legal claim</rdfs:comment>
-        <rdfs:domain rdf:resource="https://linked.art/ns/LegalClaim"/>
-        <rdfs:range rdf:resource="https://linked.art/ns/LegalClaim"/>
+        <rdfs:domain rdf:resource="https://linked.art/ns/terms/LegalClaim"/>
+        <rdfs:range rdf:resource="https://linked.art/ns/terms/LegalClaim"/>
 </rdf:Property>
 
 <rdf:Property rdf:about="https://linked.art/ns/terms/claimed_part_of">
         <rdfs:label xml:lang="en">Claimed Part Of</rdfs:label>
         <rdfs:comment xml:lang="en">The subject legal claim is part of the object legal claim</rdfs:comment>
-        <rdfs:domain rdf:resource="https://linked.art/ns/LegalClaim"/>
-        <rdfs:range rdf:resource="https://linked.art/ns/LegalClaim"/>
+        <rdfs:domain rdf:resource="https://linked.art/ns/terms/LegalClaim"/>
+        <rdfs:range rdf:resource="https://linked.art/ns/terms/LegalClaim"/>
 </rdf:Property>
 
 
@@ -183,7 +183,7 @@ Add additional common relationships
 <rdf:Property rdf:about="http://schema.org/genre">
         <rdfs:label xml:lang="en">genre</rdfs:label>
         <rdfs:comment xml:lang="en">Shortcut for Genre or Style</rdfs:comment>
-        <rdfs:domain rdf:resource="E36_Visual_Item"/>
+        <rdfs:domain rdf:resource="E73_Information_Object"/>
         <rdfs:range rdf:resource="E55_Type"/>
 </rdf:Property>
 
