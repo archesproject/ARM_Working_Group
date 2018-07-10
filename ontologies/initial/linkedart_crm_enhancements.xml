@@ -183,7 +183,7 @@ Add additional common relationships
 <rdf:Property rdf:about="http://schema.org/genre">
         <rdfs:label xml:lang="en">genre</rdfs:label>
         <rdfs:comment xml:lang="en">Shortcut for Genre or Style</rdfs:comment>
-        <rdfs:domain rdf:resource="E36_Visual_Item"/>
+        <rdfs:domain rdf:resource="E73_Information_Object"/>
         <rdfs:range rdf:resource="E55_Type"/>
 </rdf:Property>
 
