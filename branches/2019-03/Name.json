@@ -1,0 +1,224 @@
+{
+    "graph": [
+        {
+            "author": " ", 
+            "cards": [
+                {
+                    "active": true, 
+                    "cardid": "56ec573d-2e3d-11e9-ab05-a4d18cec433a", 
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea", 
+                    "config": null, 
+                    "cssclass": null, 
+                    "description": "", 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "helpenabled": false, 
+                    "helptext": null, 
+                    "helptitle": null, 
+                    "instructions": null, 
+                    "is_editable": true, 
+                    "name": "Name", 
+                    "nodegroup_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "sortorder": null, 
+                    "visible": true
+                }
+            ], 
+            "cards_x_nodes_x_widgets": [], 
+            "color": null, 
+            "config": {}, 
+            "deploymentdate": null, 
+            "deploymentfile": null, 
+            "description": "", 
+            "edges": [
+                {
+                    "description": null, 
+                    "domainnode_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "edgeid": "87ff870c-2e3d-11e9-a7f3-a4d18cec433a", 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "rangenode_id": "87ff8291-2e3d-11e9-a5f2-a4d18cec433a"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "edgeid": "7880d7b8-2e3d-11e9-b340-a4d18cec433a", 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P72_has_language", 
+                    "rangenode_id": "7880d3e6-2e3d-11e9-ac93-a4d18cec433a"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "edgeid": "62f0b7d9-2e3d-11e9-9772-a4d18cec433a", 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content", 
+                    "rangenode_id": "62f0b08c-2e3d-11e9-bff0-a4d18cec433a"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "edgeid": "96920397-2e3d-11e9-8883-a4d18cec433a", 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.w3.org/2000/01/rdf-schema#label", 
+                    "rangenode_id": "9691fd2e-2e3d-11e9-a96f-a4d18cec433a"
+                }, 
+                {
+                    "description": null, 
+                    "domainnode_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "edgeid": "ec2f781c-2e40-11e9-9b20-a4d18cec433a", 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "name": null, 
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by", 
+                    "rangenode_id": "ec2f7285-2e40-11e9-9cad-a4d18cec433a"
+                }
+            ], 
+            "functions_x_graphs": [], 
+            "graphid": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+            "iconclass": "", 
+            "is_editable": true, 
+            "isactive": true, 
+            "isresource": false, 
+            "jsonldcontext": null, 
+            "name": "Name", 
+            "nodegroups": [
+                {
+                    "cardinality": "1", 
+                    "legacygroupid": null, 
+                    "nodegroupid": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "parentnodegroup_id": null
+                }
+            ], 
+            "nodes": [
+                {
+                    "config": {
+                        "rdmCollection": null
+                    }, 
+                    "datatype": "concept-list", 
+                    "description": null, 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "classification", 
+                    "nodegroup_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "nodeid": "87ff8291-2e3d-11e9-a5f2-a4d18cec433a", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E55_Type", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P2_has_type", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "is_collector": true, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": true, 
+                    "name": "Name", 
+                    "nodegroup_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "nodeid": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation", 
+                    "parentproperty": "", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": null, 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": false, 
+                    "istopnode": false, 
+                    "name": "label", 
+                    "nodegroup_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "nodeid": "9691fd2e-2e3d-11e9-a96f-a4d18cec433a", 
+                    "ontologyclass": "http://www.w3.org/2001/XMLSchema#string", 
+                    "parentproperty": "http://www.w3.org/2000/01/rdf-schema#label", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": null, 
+                    "datatype": "string", 
+                    "description": null, 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "is_collector": false, 
+                    "isrequired": true, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "content", 
+                    "nodegroup_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "nodeid": "62f0b08c-2e3d-11e9-bff0-a4d18cec433a", 
+                    "ontologyclass": "http://www.w3.org/2001/XMLSchema#string", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": {
+                        "graphid": [
+                            "41a41e47-2e42-11e9-b5ee-a4d18cec433a"
+                        ]
+                    }, 
+                    "datatype": "resource-instance-list", 
+                    "description": null, 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "source", 
+                    "nodegroup_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "nodeid": "ec2f7285-2e40-11e9-9cad-a4d18cec433a", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P67i_is_referred_to_by", 
+                    "sortorder": 0
+                }, 
+                {
+                    "config": {
+                        "rdmCollection": null
+                    }, 
+                    "datatype": "concept", 
+                    "description": null, 
+                    "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": false, 
+                    "name": "language", 
+                    "nodegroup_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                    "nodeid": "7880d3e6-2e3d-11e9-ac93-a4d18cec433a", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E56_Language", 
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P72_has_language", 
+                    "sortorder": 0
+                }
+            ], 
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
+            "relatable_resource_model_ids": [], 
+            "resource_2_resource_constraints": [], 
+            "root": {
+                "config": null, 
+                "datatype": "semantic", 
+                "description": "", 
+                "graph_id": "56ea34f0-2e3d-11e9-a019-a4d18cec433a", 
+                "is_collector": true, 
+                "isrequired": false, 
+                "issearchable": true, 
+                "istopnode": true, 
+                "name": "Name", 
+                "nodegroup_id": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                "nodeid": "56ea2ec7-2e3d-11e9-b1d0-a4d18cec433a", 
+                "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation", 
+                "sortorder": 0
+            }, 
+            "slug": null, 
+            "subtitle": "", 
+            "template_id": "50000000-0000-0000-0000-000000000001", 
+            "version": ""
+        }
+    ]
+}
