@@ -1,0 +1,64 @@
+{
+    "graph": [
+        {
+            "author": " ", 
+            "cards": [], 
+            "cards_x_nodes_x_widgets": [], 
+            "color": null, 
+            "config": {}, 
+            "deploymentdate": null, 
+            "deploymentfile": null, 
+            "description": "", 
+            "edges": [], 
+            "functions_x_graphs": [], 
+            "graphid": "24c45975-3955-11e9-80f0-a4d18cec433a", 
+            "iconclass": "", 
+            "is_editable": true, 
+            "isactive": true, 
+            "isresource": true, 
+            "jsonldcontext": null, 
+            "name": "Activity", 
+            "nodegroups": [], 
+            "nodes": [
+                {
+                    "config": null, 
+                    "datatype": "semantic", 
+                    "description": "", 
+                    "graph_id": "24c45975-3955-11e9-80f0-a4d18cec433a", 
+                    "is_collector": false, 
+                    "isrequired": false, 
+                    "issearchable": true, 
+                    "istopnode": true, 
+                    "name": "Activity", 
+                    "nodegroup_id": null, 
+                    "nodeid": "24c026ee-3955-11e9-9a23-a4d18cec433a", 
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity", 
+                    "parentproperty": "", 
+                    "sortorder": 0
+                }
+            ], 
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd", 
+            "relatable_resource_model_ids": [], 
+            "resource_2_resource_constraints": [], 
+            "root": {
+                "config": null, 
+                "datatype": "semantic", 
+                "description": "", 
+                "graph_id": "24c45975-3955-11e9-80f0-a4d18cec433a", 
+                "is_collector": false, 
+                "isrequired": false, 
+                "issearchable": true, 
+                "istopnode": true, 
+                "name": "Activity", 
+                "nodegroup_id": null, 
+                "nodeid": "24c026ee-3955-11e9-9a23-a4d18cec433a", 
+                "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E7_Activity", 
+                "sortorder": 0
+            }, 
+            "slug": null, 
+            "subtitle": "", 
+            "template_id": "50000000-0000-0000-0000-000000000001", 
+            "version": ""
+        }
+    ]
+}
