@@ -1,4 +1,4 @@
-name: glossary
+
 # Glossary
 
 * Structured data: 

@@ -1,4 +1,4 @@
-name: standards
+
 # Standards 
 Standards define the structure, format, and framework for data and databases. They are widely adopted, either within a specific institution (i.e. University or Archive) or across multiple institutions (i.e. American Libraries or International Council of Museums)
 

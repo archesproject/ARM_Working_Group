@@ -1,4 +1,4 @@
-name: why_struct
+
 # Why structure data?
 
 Organizing data into categories gives meaning and usefulness to the data

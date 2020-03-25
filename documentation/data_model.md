@@ -1,4 +1,4 @@
-name: data_model
+
 # Data Model
 
 A data model establishes the structure and organization, as determined by ontologies and semantic standardization, to a database.

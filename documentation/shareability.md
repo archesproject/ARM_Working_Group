@@ -1,2 +1,2 @@
-name: shareability
+
 # Shareability

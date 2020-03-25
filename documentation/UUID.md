@@ -1,4 +1,4 @@
-name: UUID
+
 # Universal Unique Identifiers
 
 Unique identifiers (UUID) are associated with any given entity within a database structure. Each entity has a uniquely coded identifier that ensures exactly what it is.

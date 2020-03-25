@@ -1,4 +1,4 @@
-name: conceptual_model_arches
+
 # Conceptual Models in Arches
 
 each model is defined by object it describes

@@ -1,4 +1,4 @@
-name: contact
+
 # Contact Page
 
 Current Core Members of the ARM WG:

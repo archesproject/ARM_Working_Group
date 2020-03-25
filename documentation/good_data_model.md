@@ -1,4 +1,4 @@
-name: good_data_model
+
 # A good data model needs:
 
 * Clearly defined scope and subject

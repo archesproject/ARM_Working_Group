@@ -1,4 +1,4 @@
-name: how_struct
+
 # How is data structured?
 Structured data, as found in a table or database, is organized and formatted for processing and analysis. 
 

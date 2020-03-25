@@ -1,4 +1,4 @@
-name: clean
+
 # Clean Data 
 
 Clean data is consistent in terminology, formatting, and structure through the entirety of the table or database.

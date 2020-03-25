@@ -1,4 +1,4 @@
-name: arm_wg
+
 # Role of the ARM WG
 
 The Arches Resource Model (ARM) Working Group provides guidance and methodology to create Resource Models and Branches for Arches instances. The goal is to help Arches users:

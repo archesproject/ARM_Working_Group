@@ -1,2 +1,2 @@
-name: links
+
 # Additional Links

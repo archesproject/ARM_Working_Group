@@ -1,4 +1,4 @@
-name: RDM
+
 # Reference Data Manager
 The RDM manages controlled vocabularies through broader thesaurus concepts.
 

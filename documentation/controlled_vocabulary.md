@@ -1,4 +1,4 @@
-name: cont_vocabs
+
 # Controlled Vocabularies
 
 Controlled Vocabularies are the set of standards chosen for preferred terminology used within a database.
