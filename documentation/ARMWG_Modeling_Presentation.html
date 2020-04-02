@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Arches, data modeling" />
+    <meta name="description" content="Arches Resource Model Working Group Documentation" />
+    <title>ARM WG Documentation</title>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif);
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: 'Droid Serif';
+      }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: 400;
+        margin-bottom: 0;
+      }
+      .remark-slide-content {
+        font-size: 1.1em;
+      }
+      .remark-slide-content h1 { font-size: 3em; }
+      .remark-slide-content h2 { font-size: 2em; }
+      .remark-slide-content h3 { font-size: 1.6em; }
+      .footnote {
+        font-size: 0.8em;
+        position: absolute;
+        bottom: 3em;
+      }
+      li p { line-height: 1.25em; }
+      .brown {color: #8B4513;}
+      .red { color: #c20707; }
+      .blue {color: #191970; }
+      .darkgreen {color: #006400; }
+      .orange {color: #ff8c00; }
+      .large { font-size: 2em; }
+      a, a > code {
+        color: #808080;
+        text-decoration: underline dotted;
+        text-decoration-color: #d3d3d3;
+
+      }
+      code {
+        background: #e7e8e2;
+        border-radius: 5px;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-code-line-highlighted     { background-color: #373832; }
+      .pull-left {
+        float: left;
+        width: 47%;
+      }
+      .pull-right {
+        float: right;
+        width: 47%;
+      }
+      .pull-right ~ p {
+        clear: both;
+      }
+      #slideshow .slide .content code {
+        font-size: 0.8em;
+      }
+      #slideshow .slide .content pre code {
+        font-size: 0.9em;
+        padding: 15px;
+      }
+      .inverse {
+        background: #272822;
+        color: #777872;
+        text-shadow: 0 0 20px #333;
+      }
+      .inverse h1, .inverse h2 {
+        color: #f3f3f3;
+        line-height: 0.8em;
+      }
+
+      /* Slide-specific styling */
+      #slide-inverse .footnote {
+        bottom: 12px;
+        left: 20px;
+      }
+      #slide-how .slides {
+        font-size: 0.8em;
+        position: absolute;
+        top:  151px;
+        right: 140px;
+      }
+      #slide-how .slides h3 {
+        margin-top: 0.2em;
+      }
+      #slide-how .slides .first, #slide-how .slides .second {
+        padding: 1px 20px;
+        height: 90px;
+        width: 120px;
+        -moz-box-shadow: 0 0 10px #777;
+        -webkit-box-shadow: 0 0 10px #777;
+        box-shadow: 0 0 10px #777;
+      }
+      #slide-how .slides .first {
+        background: #fff;
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+      }
+      #slide-how .slides .second {
+        position: relative;
+        background: #fff;
+        z-index: 0;
+      }
+
+      /* Two-column layout */
+      .left-column {
+        color: #000;
+        width: 30%;
+        height: 50%;
+        float: left;
+      }
+        .left-column h2:last-of-type, .left-column h3:last-child {
+          color: #000;
+        }
+      .right-column {
+        width: 70%;
+        float: right;
+        padding-top: 1em;
+      }
+
+      .extra-padding {
+        padding-top: 3em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+[<img src="images\Arches_Logo.jpg" width="250"/>](images\Arches_Logo.jpg)
+
+# Modeling in Arches
+The Arches Resource Model Working Group (ARM WG) <br>
+Documentation Updated: April 1, 2020
+
+---
+name: scope
+.left-column[
+  ## Learning Objectives
+]
+.right-column[
+.extra-padding[To understand:
+
+1. the basic [.orange[concepts]](#concepts) behind modeling in Arches
+
+2. the ARM WG [.red[methodology]](#methodology) for Arches Resource Models
+
+3. the [.blue[benefits]](#benefits) of adopting the ARM WG methodology
+]]
+
+
+
+<!--update TOC-->
+---
+name: concepts
+# Table of Contents
+
+.left-column[
+  ##.orange[Concepts]        
+]
+.right-column[
+.orange[[Introduction](#basic_intro) 
+
+[.orange[What is a Data Model?]](#data_model)
+  * [Types of Data Models](#data_model_types)
+  * [Structured data](#structured_data) 
+  * [Key elements of structured data](#structured_data_elements)
+    * [Clean Data](#clean_data)  
+    * [Controlled Vocabularies](#controlled_vocabularies)
+    * [Universal Unique Identifiers](#UUID) 
+    * [Triples](#triples) 
+  * [Structured data in a data model](#structured_data_in_model) 
+]]
+
+---
+name: concepts2
+#Table of Contents
+
+.left-column[
+  ##.orange[Concepts]
+  .orange[(continued)]        
+]
+.right-column[
+.orange[
+
+[.orange[What is a Semantic Data Model?]](#semantic_data_model)
+* [Semantic Standards](#semantic_standards) 
+* [Semantic Formats](#semantic_formats) 
+* [Semantic Ontologies](#semantic_ontologies)  
+* [Semantic Web](#semantic_web) 
+]]
+---
+name: concepts3
+#Table of Contents
+
+.left-column[
+  ##.orange[Concepts]
+  .orange[(continued)]        
+]
+.right-column[
+.orange[
+
+[.orange[What is an Arches Resource Model?]](#arches_resource_model)
+  * [Resource Model and Branches](#resourcemodels_branches) 
+  * [Anatomy of an Arches Branch](#branch_anatomy)   
+  * [Data Types](#datatypes)
+    * [Concept Collections](#conceptcollections)
+    * [Relationships between Resource Models](#resource-instance)
+  * [Arches Designer](#arches_designer) 
+    * [Encoding the ontology](#resourcemodel_ontology)
+  * [Reference Data Manager](#RDM) 
+
+[.orange[The Modeling Process]](#modeling_process) 
+  * [Data requirements](#data_requirements)
+  * [Data content standards](#data_content) 
+  * [Creating a conceptual model](#conceptual_model_building) 
+  * [Building Arches Resource Models](#arm_building)
+
+]]
+---
+name: methodology
+# Table of Contents 
+
+.left-column[
+  ##.red[Methodology]
+]
+
+.right-column[
+.red[[Introduction](#methodology_intro)
+
+[.red[Assumptions]](#methodology_assumptions)
+* [ARM WG Ontology](#methodology_ontology)
+* [Linked Open Data](#methodology_LOD)
+* [What makes a good data model?](#good_data_model)
+
+[.red[Modeling Patterns]](#methodology_patterns)
+
+.red[ARM WG Resources]
+* [Using the ARM WG Branches and Models](#methodology_ARMWG)
+* [Using other packages](#methodology_packages)
+
+]]
+
+---
+name: benefits
+# Table of Contents
+
+
+.left-column[
+  ##.blue[Benefits]
+]
+
+
+.right-column[
+.blue[* [Introduction](#benefits_intro)
+* [Domain expertise](#benefits_expertise)
+* [Information Search and Retrieval](#benefits_search)
+* [Shareability and Interoperability](#benefits_sharing_interoperability)
+* [Linking data sets](#benefits_linking)
+* [Arches Resource Model Working Group (ARM WG)](#arm_wg)
+* [Collaboration with ARM WG](#collaboration)
+]]
+
+---
+name: resources
+#Table of Contents
+
+
+.left-column[
+  ##.darkgreen[Resources]
+]
+
+
+.right-column[
+.darkgreen[* [ARM WG Contact page](#contact)
+* [Glossary](#glossary)
+* [Additional Links](#links)
+]]
+---
+class: center, middle
+name: basic_concepts
+#What are the basic .orange[concepts] you should know for modeling in Arches?
+
+
+---
+
+name: basic_intro
+# Introduction
+
+The information in this section introduces some concepts that will be helpful to understand before engaging with the ARM WG methodology for Arches modeling.
+
+Generally, the concepts have a direct relationship to the modeling process and why it's important. 
+
+
+---
+class: center, middle
+name: basic_concepts1
+#What are the basic .orange[concepts] you should know for modeling in Arches?
+
+[<img src="images\Concepts_progress1_text.PNG" width="100%" />](images\Concepts_progress1_text.PNG)
+
+---
+name: data_model
+#What is a Data Model? 
+
+A data model establishes the overall organization of data in any given database or system. 
+
+Data models can work on a conceptual level as well as a functional level. A conceptual data model provides the overall vision and framework for data organization but might not be adequately interpreted, structured and encoded for a particular software application. A data model that is also functional, such as an Arches Resource Model, is ready to be loaded into and expressed through a software application, in this case, Arches.  
+
+IMAGE of a conceptual model and an actual Arches Resource Model.
+
+This documentation focuses on modeling functional data models, Arches Resource Models, that rely on conceptual frameworks. 
+
+.footnote[Further reading:<br>
+* link(s)?]
+
+---
+name: data_model_types
+#Types of Data Models
+
+In addition, there are different types of data models, often corresponding to the type of database or system. For example, a relational data model, which corresponds to relational databases, is based on a table structure. A graph data model, which often corresponds to graph databases, focuses on the data itself and the relationships between data. As a note, Arches Resource Models are graph data models.
+
+[<img src="images\tigergraph-database-compare.jpg" height="200px" />](images\tigergraph-database-compare.jpg)
+
+Because Arches Resource Models are graph data models, it is important to understand [.orange[structured data]](#structured_data) and how it forms the basis for graph data models.
+
+
+.footnote[Further reading:<br>
+* link(s)?]
+
+
+
+<!--A good conceptual data model provides the technical details for a programmer to implement the data model within a database and/or interface that will allow the stored data to be navigated and searchable. -->
+
+---
+name: structured_data
+# Structured data
+
+Structured data is data that is organized and formatted in a way that is machine-readable, or in other words, usable by computer applications for processing, analysis and other functions. 
+
+In relational databases, the structure of the data is created by tables. However, in order to increase portability, interoperability and longevity, data should be structured to be self-describing and independent of any particular software application. 
+
+To understand how structured data can achieve this, it is important to understand some key elements of structured data.
+
+.footnote[Further reading:<br>
+* link(s)?]
+
+---
+name: structured_data_elements
+# Key Elements to Structured Data
+
+The following elements help to form the foundation for data that is meaningful and useful:
+1. [.orange[Clean Data]](#clean_data)
+2. [.orange[Controlled Vocabularies]](#controlled_vocabularies)
+3. [.orange[Universal Unique Identifiers]](#UUID)
+4. [.orange[Triples]](#triples)
+
+Structured data consists of clean and consistent data, with terminology that is defined by established controlled vocabularies. All database types can benefit from data that have these two elements. 
+
+Structured data also has elements that are essential in graph databases: the ability for each instance of data to be uniquely identified, preferably through a universal unique identifier, and the ability to create meaninful relationships between data instances through the use of triples. 
+
+---
+name: clean_data
+# Clean Data 
+
+Clean data is consistent in terminology, formatting, and structure through the entirety of the table or database.
+
+For example: 
+consistent date formatting i.e. 2019-10-02 instead of 10/2/19
+
+preferred terminology i.e. United States of America instead of USA
+
+Organizational standards help determine preferred format and structure
+
+[OpenRefine](https://www.openrefine.org) is a great, open source tool to help clean data
+
+.footnote[Further reading:<br>
+* link(s)?]
+
+---
+name: controlled_vocabularies
+# Controlled Vocabularies
+
+Controlled Vocabularies are the set of standards chosen for preferred terminology used within a database.
+
+They help create consistency when data can be incredibly messy, with misspellings, homonyms, and cultural/national differences.
+
+Preferred vocabularies are established and stored in thesauri that should be shared for enhanced data interoperability.
+
+Here is a [primer to controlled vocabularies](https://www.archesproject.org/wp-content/uploads/2020/01/Controlled-Vocabularies_Jan2020.pdf) posted in the [Implementation Considerations](https://www.archesproject.org/implementation-considerations/) for the Arches Project.
+
+
+.footnote[Some examples:<br>
+* [The Getty Art and Architecture Thesaurus (AAT)](https://www.getty.edu/research/tools/vocabularies/aat/)
+* [Library of Congress Subject Headings (LCSH)](http://id.loc.gov/authorities/subjects.html)
+]
+---
+name: UUID
+# Universal Unique Identifiers
+
+Unique identifiers (UUID) are associated with any given entity within a database structure. Each entity has a uniquely coded identifier that ensures exactly what it is.
+
+A Social Security number is a UID because it is specific to one single person and cannot be repeated.
+
+A UID can also link an entity to a controlled vocabulary. The AAT record number can replace the name of any entity because it links back to the original preferred authority record.
+
+.footnote[Further reading:<br>
+* [link name](link url)]
+
+---
+name: triples
+# Triples
+
+A triple is a data configuration in which a data entity is linked by a relationship property to another data entity. 
+
+For example, .red[a person (entity)] .blue[is identified by (property)] .darkgreen[a name (entity)]
+
+IMAGE of a basic triple structure.
+
+
+
+.footnote[Further reading:<br>
+* [link name](link url)]
+
+---
+name: structured_data_in_model
+#Structured data in a data model
+
+A graph data model essentially creates a network of interconnected triples. 
+
+IMAGE of a graph data model.
+
+This covers the structure of a graph data model. The next section deals with how to overlay the data model with semantic meaning. 
+
+---
+class: center, middle
+name: basic_concepts2
+#What are the basic .orange[concepts] you should know for modeling in Arches?
+
+[<img src="images\Concepts_progress2_text.PNG" width="100%" />](images\Concepts_progress2_text.PNG)
+
+---
+name: semantic_data_model
+#What is a semantic data model?
+
+When previously describing this triple:
+
+.red[a person (entity)] .blue[is identified by (property)] .darkgreen[a name (entity)]
+
+both entities and the property are understandable to humans who understand English because they are written in a natural language. However, a computer only sees strings of letters, so both entities and the property must be given additional machine-readable meaning, so that a computer can parse and interpret the data.
+
+A semantic data model is a graph data model for which each entity and property in the data model is associated and encoded with semantic metadata that describes what each entity and property refers to in a way that conforms to standard computer formats.
+
+Further, to ensure that data can be more portable, interoperable, and reusable over the long term, it is essential that the conceptual framework for as well as the format of the semantic metadata be based on recognized standards. 
+
+.footnote[Further reading:<br>
+* [link name](link url)]
+
+
+---
+name: semantic_standards
+#Semantic Metadata Standards 
+
+There are two types of standards that interact when it comes to semantic metadata:
+* Standards that define the data format (i.e. RDF/XML)
+* Standards that define the conceptual data framework or ontology (i.e. CIDOC CRM)
+
+
+
+<!--Standards define the structure, format, and framework for data and databases. They are widely adopted, either within a specific institution (i.e. University or Archive) or across multiple institutions (i.e. American Libraries or International Council of Museums)
+
+Some examples:
+
+[Library of Congress Extended Date Time Format (EDTF)](https://www.loc.gov/standards/datetime/edtf.html)
+
+[CIDOC Conceptual Reference Model](http://www.cidoc-crm.org/)-->
+
+
+---
+name: semantic_formats
+#Semantic Formats
+
+Example: RDF/XML as it relates to triples.
+
+
+---
+name: semantic_ontologies
+#Semantic Ontologies
+
+An ontology is a formal organization of a data structure or knowledge graph based on standards, establishing relationships between entities and their properties. It is a way to organize and structure 
+
+
+Examples: 
+
+CIDOC CRM
+- CIDOC CRM
+
+- Linked.Art
+
+- Wikidata?
+
+
+---
+name: semantic_web
+#Semantic Web
+
+What are the goals/promise of the semantic web?
+
+
+---
+class: center, middle
+name: basic_concepts3
+#What are the basic .orange[concepts] you should know for modeling in Arches?
+
+[<img src="images\Concepts_progress3_text.PNG" width="100%" />](images\Concepts_progress3_text.PNG)
+
+
+---
+name: arches_resource_model
+#What is an Arches Resource Model?
+
+Basic description of an Arches Resource Model
+
+---
+name: resourcemodels_branches
+#Resource Models and Branches
+
+How Resource Models and Branches interact
+
+---
+name: branch_anatomy
+#Anatomy of an Arches Branch
+
+[<img src="images\Model_identifiedBy_type_annotated.jpg" width="700"/>](images\Model_identifiedBy_type_annotated.jpg)
+
+Text description of what's going on here
+
+---
+name: datatypes
+#Data Types
+
+Introduction into data types
+
+---
+name: conceptcollections
+#Concept Collections
+
+Deeper dive into concept data type and collections/controlled vocabularies
+
+---
+name: resource-instance
+#Relationships between Resource Models
+
+Deeper dive into creating relationships between resource models using resource-instance data type
+
+---
+name: arches_designer
+#Arches Designer
+
+How the Arches Designer works 
+
+.footnote[Further reading:<br>
+* Read the docs instruction on the Arches Designer?]
+
+
+---
+name: resourcemodel_ontology
+#Encoding the ontology
+
+How the Arches Designer encodes the ontology onto each entity node and property relationship
+
+---
+name: RDM
+# Reference Data Manager
+
+The role of the RDM
+
+The RDM manages controlled vocabularies through broader thesaurus concepts.
+
+<!--[<img src="images\Arches_RDM.jpg" width="250"/>](images\Arches_RDM.jpg)-->
+[<img src="images\RDM_Languages.jpg" width="225" />](images\RDM_Languages.jpg)
+[<img src="images\RDM_materials.jpg" width="225" />](images\RDM_materials.jpg)
+[<img src="images\RDM_import.jpg" width="250", height="300" />](images\RDM_import.jpg)
+
+Easily import authoritative thesauri, such as from the Getty Art and Architecture Thesaurus (AAT).
+
+
+---
+class: center, middle
+name: basic_concepts4
+#What are the basic .orange[concepts] you should know for modeling in Arches?
+
+[<img src="images\Concepts_progress4_text.PNG" width="100%" />](images\Concepts_progress4_text.PNG)
+
+
+
+---
+name: modeling_process
+#The Modeling Process
+
+The basic process for modeling, starting from data requirements, possibly alignment with a data content standard, creating a conceptual model and then building in Arches
+
+---
+name: data_requirements
+#Data requirements
+
+Deeper dive into looking at the data requirements and the types of questions to ask
+
+---
+name: data_content
+#Data content standards
+
+Introduction to data content standards, such as MIDAS Heritage and the Core Data Standard...
+
+
+.footnote[Further reading:<br>
+* links to the above mentioned data standards and other]
+
+---
+name: conceptual_model_building
+#Creating a conceptual model
+
+The easiest part, right?
+
+This section briefly goes over how to start to think about synthesizing the models
+
+---
+name: arm_building
+#Building Arches Resource Models
+
+And once you have a good conceptual framework for how you want your data to behave in Arches, here some brief guidance on how to translate that into Arches Resource Models. This would be the basic creation of Arches Resource Models. We will go into our modeling patterns in the next section.
+
+---
+class: center, middle
+name: methodology
+#What is the ARM WG .red[methodology] <br>for Arches Resource Models?
+
+
+---
+name: methodology_intro
+# Introduction
+
+This section describes the methodology of the Arches Resource Model Working Group in regards to the basic patterns and practices in creating good and useful Arches Resource Models. 
+
+---
+class: center, middle
+name: methodology1
+#What is the ARM WG .red[methodology] <br>for Arches Resource Models?
+[<img src="images\Method_progress1_text.png" width="100%" />](images\Method_progress1_text.png)
+
+---
+name: methodology_assumptions
+# Assumptions
+
+The Arches Resource Model Working Group has made several assumptions when it comes to the Resource Models, Branches, and overall patterns that it has created. The two that will be discussed here are:
+
+1. All Resource Models and Branches are encoded with the CIDOC Conceptual Reference Model
+2. The modeling patterns support the publication of Linked Open Data
+
+Other considerations are detailed in the following: What makes a good and useful data model?
+
+---
+name: methodology_ontology
+# ARM WG Ontology
+
+A description of CIDOC Conceptual Reference Model + Linked Art and why we are not using pure CIDOC CRM
+
+.footnote[Further reading:<br>
+* CIDOC CRM
+* Linked.art]
+
+---
+name: methodology_LOD
+# Linked Open Data
+
+Assumptions regarding LOD
+
+Also, what to do if you don't need to produce LOD
+
+.footnote[Further reading:<br>
+* LOD links]
+
+---
+name: good_data_model
+# A good data model needs:
+
+* Clearly defined scope and subject
+
+* Clearly defined elements
+
+* Accuracy and Flexibility
+
+* To be understandable and reusable by others
+
+* Adoption of standards
+
+(note-- link to George white paper?)
+
+
+---
+class: center, middle
+name: methodology2
+#What is the ARM WG .red[methodology] <br>for Arches Resource Models?
+[<img src="images\Method_progress2_text.png" width="100%" />](images\Method_progress2_text.png)
+
+---
+name: methodology_patterns
+#Modeling Patterns
+
+This will probably encompass several slides going through an ARM branch and deconstructing the pattern. 
+
+Name is the example that we will continue with. 
+
+Plus, we'll show Description-Statement
+
+Both in the context of a resource model.
+
+---
+class: center, middle
+name: methodology2
+#What is the ARM WG .red[methodology] <br>for Arches Resource Models?
+[<img src="images\Method_progress3_text.png" width="100%" />](images\Method_progress3_text.png)
+
+---
+name: methodology_ARMWG
+#Using the ARM WG Branches and Models
+
+How to use our models and branches as a starting off point and adapt them to your use case.
+
+Where they are i.e. in the package
+
+Specifications
+
+How to use them (add, delete, change labels, etc.)
+
+---
+name: methodology_packages
+#Using other packages
+
+Where to find other packages
+
+Where to find packages that have been vetted by us and others?
+
+
+---
+name: benefits
+class: center, middle
+#What are the .blue[benefits] of adopting the ARM WG methodology?
+
+---
+name: benefits_intro
+#Introduction
+
+Overview of all the benefits of using the ARM Methodology
+
+---
+name: benefits_expertise
+#Domain expertise
+
+The CIDOC-CRM has been developed by cultural heritage domain experts for those working in the cultural heritage field. 
+The CRM provides the framework to build conceptual models for archives, libraries, and museums. Working with the CRM will allow
+cultural heritage instututions to partner with other similar communities and to build information systems that support specialized research questions
+
+More information about the CRM [can be found here](http://www.cidoc-crm.org/).
+
+---
+name: benefits_search 
+#Information Search and Retrieval
+
+Structuring your data into a data model, or schema, will enhance the searchability and findability of information stored within it.
+The schema provides the outline for where and how the information is stored. The more detailed and precise your data models are, built using the Arches Designer,
+the better return of search results for those using your Arches instance. Linked Data is a graph structure that can enhance searchability
+by establishing semantic connections between resource elements.
+
+---
+name: benefits_sharing_interoperability
+# Shareability and Interoperability 
+
+Linked Data and semantic standardization allow the possibility for organizations to share their data with other institutions
+who structure their data following the same guidelines. The benefit of sharing data in this way is to enhance collaboration between 
+organizations and to share resources and work between multiple entities.
+
+Structured data sets will enhance interoperability and data usability for a wider variety of computer and software systems.
+
+---
+name: arm_wg
+# Role of the ARM WG
+
+The Arches Resource Model (ARM) Working Group provides guidance and methodology to create Resource Models and Branches for Arches instances. The goal is to help Arches users:
+
+* Rapidly develop and/or implement high quality Resource Models and Branches
+
+- Recognize the underpinnings for a good conceptual model
+
+- Learn CIDOC-CRM modeling patterns
+
+* Improve interoperability across data management projects
+
+* Incorporate good data modeling practice into domains beyond cultural heritage
+
+* collaborationute new Resource Models/Branches or improve existing ones as a valuable member of the Arches community
+
+---
+name: collaboration
+# What Do We Do and How Can You help?
+
+As an Open Source platform, the Arches Project encourages community development and support. 
+We welcome participation by collaborationuting software code, documentation, resource models, branches, etc 
+that may be beneficial for others to use.
+
+The ARM WG is found on GitHub: [needs link]
+
+---
+class: center, middle
+# .darkgreen[Resources]
+
+---
+name: contact
+# Contact Page
+
+Current Core Members of the ARM WG:
+* Annabel Lee Enriquez, Getty Conservation Institute (Chair)
+* Dennis Wuthrich, Farallon Geographics (Vice-Chair)
+* George Bruseker, UZH Digital Society Initiative, Takin.solutions
+* Philip Carlisle, Historic England
+* Adam Lodge, Farallon Geographics
+* Robert Sanderson, J. Paul Getty Trust
+* Anais Guillem, University of California Merced
+
+For example resource models, branches, and documentation, 
+visit the [ARM WG website here](https://www.archesproject.org/arm-wg/).
+
+Connect with other Arches users on the [Arches Project Group Forum](https://groups.google.com/forum/#!forum/archesproject).
+
+To sign up for Arches News and Announcements, [sign up here](https://www.archesproject.org/announcement-list/). 
+
+---
+name: glossary
+# Glossary
+
+* Structured data: 
+
+* Clean data:
+
+* Standards:
+
+* Controlled vocabulary
+
+* Reference Data Manager (Arches):
+
+* Data Model:
+
+* Conceptual Model:
+
+* Universal Unique Identifier (UUID):
+
+* Ontology: 
+
+* ARM WG:
+
+---
+name: links
+# Additional Links
+
+
+
+
+---
+
+name: conceptual_model_arches
+#Conceptual Models in Arches
+
+each model is defined by the kind of object it is designed to be described for and under what conditions
+
+each element of the model is defined with a clear semantic data path, using CIDOC CRM,while field labels and descriptions provide users prompts for the appropriate application of the fields in the user interface provided
+
+ARM data models provide different potential versions with simple and complex version of elements being modelled in order to support different levels of accuracy of documentation according to the circumstance
+
+each ARM WG conceptual data model comes within its own complete set of metadata, explanations and sample material in order to make clear the functionality and use of the model. Furthermore, each model is articulated using the CIDOC CRM formal ontology meaning that data generated under it is reusable within the general rubric of semantic web and linked data technology.
+
+the ARM WG takes advantage of its membership expertise and community knowledge in order to identify the best data value standards to apply to strings, data normalization of quantitative data (e.g.: dates and integers) and best normalization of classificatory data. These standards are enforced and/or recommended within the offered data models themselves. 
+
+
+---
+<!--name: how_org_struct-->
+<!--#How Can We Organize Structured Data?-->
+
+---
+<!--name: why_struct-->
+<!--#Why structure data?-->
+
+<!--StructuOrganizing data into categories gives meaning and usefulness to the data-->
+
+
+
+<!--The way data is organized and modeled can be unique to an organization or person-->
+
+---
+<!--name: how_struct-->
+<!--# How is data structured?-->
+<!--Structured data, as found in a table or database, is organized and formatted for processing and analysis. -->
+
+<!--For example, on a recipe, ingredients might be organized by type, such that eggs and milk are categorized under ‘Dairy’ while apples and pears are categorized under ‘Fruit’.-->
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

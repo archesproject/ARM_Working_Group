@@ -1,2 +1,0 @@
-
-# Arches Designer

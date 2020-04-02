@@ -1,2 +1,0 @@
-
-# The Modeling Process

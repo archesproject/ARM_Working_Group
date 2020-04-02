@@ -1,4 +1,0 @@
-
-# Triples
-
-Entities and Properties
