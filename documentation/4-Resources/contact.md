@@ -10,6 +10,9 @@ Current Core Members of the ARM WG:
 * Robert Sanderson, J. Paul Getty Trust
 * Anais Guillem, University of California Merced
 
+For questions, comments, or suggestions about the Modeling in Arches documentation, reach out to 
+us at contact@archesproject.org.
+
 For example resource models, branches, and documentation, 
 visit the [ARM WG website here](https://www.archesproject.org/arm-wg/).
 
