@@ -5,7 +5,7 @@ A triple is a data configuration in which a data entity is linked by a relations
 
 For example, a person (entity) is identified by (property) a name (entity)
 
-IMAGE of a basic triple structure.
+![Resource Model contents](Slide7.jpeg)
 
 
 

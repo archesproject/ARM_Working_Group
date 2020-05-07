@@ -9,3 +9,4 @@ For example, if your Arches instance records information on Buildings, People, a
 
 All of this is encoded in a JSON file that can be exported from one Arches implementation and imported into another. In other words, the same Arches Resource Model or set of Arches Resource Models can be used by different Arches implementations. 
 
+The Arches Resource Model Working Group focuses primarily on creating guidance on the semantic graph model portion of the Arches Resource Model as well as providing sample Arches Resource Models, as well as Branches, that can be used and modified by various Arches implementers. 
