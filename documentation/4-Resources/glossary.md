@@ -19,14 +19,12 @@
 
 * Universal Unique Identifier (UUID): a 128-bit number used to reliably identify an object or entity within a database.
 
-# Arches Specific Terms
+# Glossary: Arches Specific Terms
 
 For a larger collection of Arches Terminology, see the [Arches Glossary Here](https://arches.readthedocs.io/en/stable/glossary/)
 
-* Arches Designer: 
-
-* Arches Collector:
+* Arches Designer: A user interface for facilitating database design, i.e. the creation of Resource Models. The Arches Designer consists of many different tools, such as the Graph Designer and Card Manager, each of which helps build a different facet of Resource Model creation.
 
 * Reference Data Manager: The Reference Data Manager (RDM) is a core Arches module to create and maintain concept schemes (controlled vocabularies) or thesauri. It enables the creation and maintenance of controlled vocabularies for use in dropdowns and controlled fields within the various Arches Resource forms. For more information: [Reference Data Manager (RDM)](https://arches.readthedocs.io/en/stable/rdm/)
 
-* ARM WG:
+* ARM WG: 

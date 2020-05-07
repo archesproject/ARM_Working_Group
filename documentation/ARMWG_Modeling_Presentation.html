@@ -407,11 +407,15 @@ Here is a [primer to controlled vocabularies](https://www.archesproject.org/wp-c
 name: UUID
 # Universal Unique Identifiers
 
-Unique identifiers (UUID) are associated with any given entity within a database structure. Each entity has a uniquely coded identifier that ensures exactly what it is.
+Universal Unique identifiers (UUID) are associated with any given entity within a database structure. Each entity has a uniquely coded identifier that ensures exactly what it is. A UUID is a 128-bit number that differentiates the term from any other possibilities found online. This 128-bit number is difficult to replicate, as there are 3.4 x 10^38 possible alphanumeric combinations (an extremely large number!).
 
-A Social Security number is a UID because it is specific to one single person and cannot be repeated.
+Arches utilizes UUIDs, e.g. 662b53c0-2e26-4b87-a6d0-109b7f611e05 
 
-A UID can also link an entity to a controlled vocabulary. The AAT record number can replace the name of any entity because it links back to the original preferred authority record.
+Similarily, a UID (Unique Identifier) or URI (Uniform Resource Identifier) may be unique within an organization, but not necessarily unique universally. For example, a university student identification number is a UID that will not be repeated within the context of that university. A Social Security number also is a UID because it is specific to one single person within one single context and cannot be repeated.
+
+A UID can also link an entity to a controlled vocabulary. The AAT record number can replace the name of any entity because it links back to the original preferred authority record. For example, the AAT record for 'database' is http://vocab.getty.edu/aat/300028543, with the UID being 300028543.
+
+Usage of a UID or UUID is important within a database or spreadsheet in order to faciliate sorting and filtering information, as well has link back to specific entity within the database system. 
 
 .footnote[Further reading:<br>
 * [link name](link url)]
@@ -487,33 +491,67 @@ Some examples:
 
 ---
 name: semantic_formats
-#Semantic Formats
+# Semantic Formats: RDF
 
-Example: RDF/XML as it relates to triples.
+RDF (Resource Description Framework): A classification schema to construct conceptual data models. The RDF is a set of standards specified by the [World Wide Web Consortium (W3C)](https://www.w3.org/2001/sw/wiki/RDF). 
+
+The RDF is constructed by a series of expressions about a resource that are formatted in a [semantic triple](https://www.w3.org/TR/2014/REC-n-triples-20140225/Overview.html).
+This semantic triple is structured: subject-predicate-object
+
+The RDF defines a model and a set of elements through a domain-specific syntax to encode information in a machine-readable format.
+
+.footnote[Further reading:<br>
+* [RDFa 1.1 Primer- W3C](https://www.w3.org/TR/2015/NOTE-rdfa-primer-20150317/)]
+---
+name: semantic_formats_2
+# Other Semantic Formats: 
+
+* [RDF/XML](https://www.w3.org/TR/rdf-syntax-grammar/): The required syntax to express RDF graphs in XML.
+
+* [OWL (Web Ontology Language)](https://www.w3.org/OWL/): A semantic web language to describe the relationship about things and relationships between them. In addition to RDF and SPARQL, OWL is part of the W3C Semantic Web technology stack.
+
+* [SPARQL (SPARQL Protocol and RDF Query Language)](https://www.w3.org/2001/sw/wiki/SPARQL): a query language used to parse and navigate information stored within an RDF graph. It translates the complex web of interlinked data into tabular data, making data more easily accessible.
+
+* [SKOS (Simple Knowledge Organization System)](https://www.w3.org/TR/skos-primer/): a simple way to express structure and content within a concept scheme. SKOS is built upon RDF for simple publication of data as Linked Data. 
+
+.footnote[Further reading:<br>
+* [RDF/XML- w3schools](https://www.w3schools.com/xml/xml_rdf.asp)
+* [SPARQL Tutorial- Programming Historian](https://programminghistorian.org/en/lessons/retired/graph-databases-and-SPARQL)
+* [SKOS Reference- W3C](https://www.w3.org/TR/skos-reference/)]
 
 
 ---
 name: semantic_ontologies
 #Semantic Ontologies
 
-An ontology is a formal organization of a data structure or knowledge graph based on standards, establishing relationships between entities and their properties. It is a way to organize and structure 
+An ontology is a formal organization of a data structure or knowledge graph based on standards, establishing relationships between entities and their properties. An ontology is a way to structure semantic understanding shared by members of a specific domain. 
 
+For the Cultural Heritage domain, of which the Arches Resource Modeling Working Group is associated, there are prevalent existing ontologies, developed by domain experts, that are built and widely used for institutions to model and integrate their own data resources according to to established structure and guidelines. 
 
 Examples: 
 
-CIDOC CRM
-- CIDOC CRM
+* [CIDOC-CRM](http://www.cidoc-crm.org/)
+* [Linked.Art](https://linked.art/)
 
-- Linked.Art
-
-- Wikidata?
+Links:
+* [Ontologies and the Semantic Web (2003)](https://asistdl.onlinelibrary.wiley.com/doi/pdf/10.1002/bult.283)
 
 
 ---
 name: semantic_web
-#Semantic Web
 
-What are the goals/promise of the semantic web?
+# Semantic Web
+
+The Semantic Web is the vision to make the world wide web machine-readable, such that all online data and resources are linked by a Unique Resource Identifier (URI). This will promote the navigation between resources and to improve automation for information retrieval online. 
+
+The goals of the Semantic Web are to:
+- Structure meaningful content on web pages to promote machine automation in accessing and processing data
+* Encode the semantics (meaning) of the data through designated frameworks (RDF and OWL)
+- Promote Natural Language Processing and Semantic Search to support enhanced navigation and searchability on the web and from a variety of different sources.
+
+
+.footnote[Further reading:<br>
+* ["The Semantic Web": First published article in 2001 by Tim Berners-Lee, et al](https://www-sop.inria.fr/acacia/cours/essi2006/Scientific%20American_%20Feature%20Article_%20The%20Semantic%20Web_%20May%202001.pdf)]
 
 
 ---
@@ -866,9 +904,7 @@ To sign up for Arches News and Announcements, [sign up here](https://www.archesp
 
 For a larger collection of Arches Terminology, see the [Arches Glossary Here](https://arches.readthedocs.io/en/stable/glossary/)
 
-* Arches Designer: 
-
-* Arches Collector:
+* Arches Designer: A user interface for facilitating database design, i.e. the creation of Resource Models. The Arches Designer consists of many different tools, such as the Graph Designer and Card Manager, each of which helps build a different facet of Resource Model creation.
 
 * Reference Data Manager: The Reference Data Manager (RDM) is a core Arches module to create and maintain concept schemes (controlled vocabularies) or thesauri. It enables the creation and maintenance of controlled vocabularies for use in dropdowns and controlled fields within the various Arches Resource forms. For more information: [Reference Data Manager (RDM)](https://arches.readthedocs.io/en/stable/rdm/)
 
