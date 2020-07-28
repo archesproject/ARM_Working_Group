@@ -14,7 +14,7 @@ For questions, comments, or suggestions about the Modeling in Arches documentati
 us at contact@archesproject.org.
 
 For example resource models, branches, and documentation, 
-visit the [ARM WG website here](https://www.archesproject.org/arm-wg/).
+visit the [ARM WG website](https://www.archesproject.org/arm-wg/).
 
 Connect with other Arches users on the [Arches Project Group Forum](https://groups.google.com/forum/#!forum/archesproject).
 

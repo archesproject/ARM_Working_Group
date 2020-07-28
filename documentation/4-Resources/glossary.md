@@ -1,7 +1,7 @@
 
-## Glossary
+# Glossary
 
-# General Data Management Terms
+## General Data Management Terms
 
 * Structured data: data that is organized and formatted within a database or other such repository to enhance data searchability and to allow for more effective processing and analysis.
 
@@ -10,6 +10,8 @@
 * Standards: the rules or documented agreement on the format, structure, representation, usage, etc of the ways in which data are described or recorded. They are the best practices of how data and metadata should be described, formatted, or included in a data set.
 
 * Controlled vocabulary: a set of standardized terms, thesauri, or subject headings that are preferred for a data set. It ensures consistency of vocabulary to control for spelling differences, homonyms, or name variations for a single defined entity.
+
+---
 
 * Data Model: An abstract, visual representation of data objects for a group or organization in order to structure a database. A good data model follows formalized standards, or best practices, in format and structure.
 
@@ -27,4 +29,4 @@ For a larger collection of Arches Terminology, see the [Arches Glossary Here](ht
 
 * Reference Data Manager: The Reference Data Manager (RDM) is a core Arches module to create and maintain concept schemes (controlled vocabularies) or thesauri. It enables the creation and maintenance of controlled vocabularies for use in dropdowns and controlled fields within the various Arches Resource forms. For more information: [Reference Data Manager (RDM)](https://arches.readthedocs.io/en/stable/rdm/)
 
-* ARM WG: 
+* ARM WG: The group established to provide consensus-based guidance on Arches Resource Models and constituent Branches, specifically on how to build and apply them. More information on the ARM [can be found here](https://www.archesproject.org/arm-wg/).
