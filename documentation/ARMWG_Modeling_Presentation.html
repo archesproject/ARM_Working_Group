@@ -19,7 +19,7 @@
         margin-bottom: 0;
       }
       .remark-slide-content {
-        font-size: 1.1em;
+        font-size: 1em;
       }
       .remark-slide-content h1 { font-size: 3em; }
       .remark-slide-content h2 { font-size: 2em; }
@@ -398,11 +398,30 @@ Preferred vocabularies are established and stored in thesauri that should be sha
 
 Here is a [primer to controlled vocabularies](https://www.archesproject.org/wp-content/uploads/2020/01/Controlled-Vocabularies_Jan2020.pdf) posted in the [Implementation Considerations](https://www.archesproject.org/implementation-considerations/) for the Arches Project.
 
+Some examples:
 
-.footnote[Some examples:<br>
-* [The Getty Art and Architecture Thesaurus (AAT)](https://www.getty.edu/research/tools/vocabularies/aat/)
-* [Library of Congress Subject Headings (LCSH)](http://id.loc.gov/authorities/subjects.html)
-]
+[The Getty Art and Architecture Thesaurus (AAT)](https://www.getty.edu/research/tools/vocabularies/aat/)
+
+[Library of Congress Subject Headings (LCSH)](http://id.loc.gov/authorities/subjects.html)
+
+The Arches Project manages its Controlled Vocabularies and Thesauri through the Reference Data Manager (RDM). For a more detailed guide on the RDM, [click here](***link to RDM slide # Reference Data Manager***).
+
+---
+name: controlled_vocabularies2
+# Controlled Vocabularies Links and Tutorials
+
+[Introduction to Controlled Vocabularies: Terminology for Art, Architecture, and other Cultural Works (Online Edition) by Patricia Harpring](https://www.getty.edu/research/publications/electronic_publications/intro_controlled_vocab/)
+
+[Controlled Vocabulary and Thesaurus Design from the Library of Congress Cataloger's Learning Workshop](https://www.loc.gov/catworkshop/courses/thesaurus/pdf/cont-vocab-thes-trnee-manual.pdf)
+
+[List of taxonomies and controlled vocabularies: University of Puttsburgh Libraries Subject Guide](https://pitt.libguides.com/metadatadiscovery/controlledvocabularies)
+
+[Discover Digital Libraries: Theory and Practice- Chapter 5: Metadata](https://www.sciencedirect.com/science/article/pii/B9780124171121000053)(PAYWALL)
+
+[Simple Knowledge Organization System (SKOS) Wikipedia entry](https://en.wikipedia.org/wiki/Simple_Knowledge_Organization_System#Overview)
+
+[W3C SKOS Primer](https://www.w3.org/TR/skos-primer/)
+
 ---
 name: UUID
 # Universal Unique Identifiers
@@ -428,12 +447,7 @@ A triple is a data configuration in which a data entity is linked by a relations
 
 For example, .red[a person (entity)] .blue[is identified by (property)] .darkgreen[a name (entity)]
 
-IMAGE of a basic triple structure.
-
-
-
-.footnote[Further reading:<br>
-* [link name](link url)]
+[<img src="images\Slide7.jpeg" width="100%" />](Slide7.jpeg)
 
 ---
 name: structured_data_in_model
@@ -566,55 +580,126 @@ name: basic_concepts3
 name: arches_resource_model
 #What is an Arches Resource Model?
 
-Basic description of an Arches Resource Model
+An Arches Resource Model is a semantic graph data model formatted for use with the Arches Platform. Arches Resource Models also include the information and formatting for the data entry interface (i.e. forms) to input the data and the report to display the data for each Resource Model.
+
+[<img src="images\Slide1.jpeg" height="400px" />](Slide1.jpeg)
+
+---
+name: arches_resource_model2
+
+For example, if your Arches instance records information on Buildings, People, and Activities, you would typically create a Resource Model for Building, a Resource Model for People and a Resource Model for Activities. This would result in a data entry interface and report template for Buildings, a data entry interface and report template for People, and a data entry interface and report template for Activities. 
+
+All of this is encoded in a JSON file that can be exported from one Arches implementation and imported into another. In other words, the same Arches Resource Model or set of Arches Resource Models can be used by different Arches implementations. 
+
+The Arches Resource Model Working Group focuses primarily on creating guidance on the semantic graph model portion of the Arches Resource Model as well as providing sample Arches Resource Models, as well as Branches, that can be used and modified by various Arches implementers. 
 
 ---
 name: resourcemodels_branches
 #Resource Models and Branches
 
-How Resource Models and Branches interact
+(Arches) Resource Models consist of discrete Branches that function as smaller graph models within the larger whole. 
+
+[<img src="images\Slide2.jpeg" height="400px" />](images/Slide2.jpeg)
+
+For example, a Resource Model for Person might be composed of a Name branch that contains all of the data related to a person's name and a Description branch that contains all of the data relating to a descriptive statement about a person. 
+
+---
+name: resourcemodels_branches2
+
+[<img src="images\Slide3.jpeg" height="400px" />](Slide3.jpeg)
+
+A Branch can be used by many different Resource Models. For example, basic Name and Description branches can be used by the respective Resource Models for People, Buildings, and Activities. And similar to Resource Models, Branch information is encoded in a JSON file that can be exported from one Arches implementation and imported into another. 
 
 ---
 name: branch_anatomy
 #Anatomy of an Arches Branch
 
-[<img src="images\Model_identifiedBy_type_annotated.jpg" width="700"/>](images\Model_identifiedBy_type_annotated.jpg)
+An Arches Branch typically groups data together that is thematically related. In the example below, this simplified Name Branch consists of the triple formed by "Name"(entity) "has type"(property) "Name Type"(entity). 
 
-Text description of what's going on here
+[<img src="images\Slide4.jpeg" height="400px" />](Slide4.jpeg)
+
+In Arches, the entities are represented by Nodes and the properties are the Relationships. "Name" and "Name Type" are Nodes and "has type" is the Relationship between the Nodes. 
+
+---
+name: branch_anatomy2
+
+In using the CIDOC CRM ontology, each Node is assigned a CRM Class and each Relationship is assigned a CRM Property. The semantic statement formed by the branch then reads as: "Name" (as defined by CRM Class E41 Appellation) "has type" (as defined by CRM Property P2 Has Type) "Name Type" (as defined by CRM Class E55 Type).
+
+[<img src="images\Slide5.jpeg" height="400px" />](Slide5.jpeg)
+
+This defines the structure for a very simplified version of a Name branch. It is possible that more types of information would need to be represented in a Name branch, such as the language of Name or the source of a Name, and additional Nodes and Relationships can be added to accommodate such needs. It is important to note that Arches can easily be configured to record as many instances (entries) of the data represented in the Name branch as needed. 
+
+---
+name: branch_anatomy3
+
+For example, below are two instances of the Name branch for the same Person.
+
+[<img src="images\Slide6.jpeg"/>](Slide6.jpeg)
+
+Mark Twain, the author of "The Adventures of Tom Sawyer", was given the name "Samuel Clemens" at birth, and above is an example of how the Name branch structure shown is able to represent both names along with the type of name associated with each. 
 
 ---
 name: datatypes
 #Data Types
 
-Introduction into data types
+Each Node in a Branch/Resource Model is assigned a data type that defines what kind of data can be entered for that Node and how data is entered. Here is a listing of some of the data types that can be assigned to a Node in Arches:
+
+* **Semantic** - Nodes with a semantic data type carry no data, but serve to enforce the semantic structure and grouping of nodes.
+* **String** - This data type supports the entry of alphanumeric text.
+* **Number** - This data type supports entry of numbers.
+* **Date** - This data type supports the entry of date and time. 
+* **Geojson Feature Collection** - This data type supports the entry of geospatial data. 
+* **File** - This data type supports the upload of various file types and how they are visualized. 
+* **Resource-Instance** - This data type supports the connection of Resource Models to each other via a specific Node.
+* **Concept** - This data type supports the selection of data from a controlled vocabulary managed by the Arches Reference Data Manager.
+* **Domain** - This data type supports the selection of data from a list that is not managed by the Arches Reference Data Manager. 
+* **IIIF Annotation** - This data type supports the import and annotation of images served by a IIIF image server.
+* **Extended Date Time Format** - This data type supports of the input of date information according to the Library of Congress' Extended Data Time Format.
+
 
 ---
 name: conceptcollections
 #Concept Collections
 
-Deeper dive into concept data type and collections/controlled vocabularies
+The Concept data type connects a Node to a controlled vocabulary for data entry. In Arches, controlled vocabularies are called Concept Collections. In the Name branch example below, the node for Name Type would be assigned the Concept data type which would also necessitate the designation of a Concept Collection that contains the Concepts (or terms) for Name Type. 
+
+[<img src="images\Slide6.jpeg"/>](Slide6.jpeg)
+
+The Concept Collection would include the Concepts of "Birth Name" and "Pen Name", as well as other types of names. Concepts and Concept Collections are managed by Arches in the Reference Data Manager. 
+
+As described in the section on Controlled Vocabularies, Concepts and Concept Collections have their own organizing principles and are an extension of the data model structure. 
+
 
 ---
 name: resource-instance
 #Relationships between Resource Models
 
-Deeper dive into creating relationships between resource models using resource-instance data type
+Through the resource-instance data type, relationships can be created between Resource Models. 
+
+[<img src="images\Slide8.jpeg" height="400px" />](Slide8.jpeg)
+
+In the example above, the Person Resource Model has a Node for Building that the Person currently or formerly owned. This Node was assigned a resource-instance data type and links to the Resource Model for Building. This allows instances of the Building Resource Model to be associated with many different instances of the Person Resource Model and other Resource Models.
+
 
 ---
 name: arches_designer
 #Arches Designer
 
-How the Arches Designer works 
+Arches Designer is a tool that gives Arches administrators the ability to create Resource Models and in doing so, dynamically generate the Arches user interface and design the underlying data structure with no coding experience necessary. 
+
+[<img src="images\arches_designer.png" height="350px" border="1px"/>](arches_designer.png)
 
 .footnote[Further reading:<br>
-* Read the docs instruction on the Arches Designer?]
+* [Arches documentation on how to use Arches Designer](https://arches.readthedocs.io/en/latest/designing-the-database/#arches-designer)]
 
 
 ---
 name: resourcemodel_ontology
 #Encoding the ontology
 
-How the Arches Designer encodes the ontology onto each entity node and property relationship
+Most Arches packages use an ontology that is CIDOC CRM-based, and as a result, the Arches Designer generally has the classes and properties of the CIDOC CRM preloaded and restricts the selection of inappropriate class and property combinations. 
+
+[<img src="images\arches_designer2.png" height="350px" border="1px"/>](arches_designer2.png)
 
 ---
 name: RDM
